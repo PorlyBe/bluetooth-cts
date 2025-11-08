@@ -1,6 +1,6 @@
-name: Bluetooth CTS Time Sync
+name: Bluetooth CTS
 slug: bluetooth-cts
-version: 1.0.1
+version: 1.0.0
 description: >
   Advertises a Bluetooth Current Time Service (CTS) for BLE clocks and devices to sync time with Home Assistant. No pairing required. Timezone is configurable.
 url: https://github.com/PorlyBe/bluetooth-cts
