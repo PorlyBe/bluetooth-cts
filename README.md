@@ -1,6 +1,6 @@
-# Bluetooth CTS Add-on
+# ![Bluetooth CTS icon](bluetooth-cts/icon.png) Bluetooth CTS Add-on
 
-![Bluetooth CTS icon](bluetooth-cts/icon.png)
+
 
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](bluetooth-cts/config.yaml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
