@@ -1,0 +1,10 @@
+configuration:
+  device_name:
+    name: Bluetooth Device Name
+    description: Name advertised over Bluetooth
+  log_level:
+    name: Log Level
+    description: Set the logging verbosity
+  timezone:
+    name: Timezone
+    description: IANA timezone name (e.g., Europe/Berlin)
