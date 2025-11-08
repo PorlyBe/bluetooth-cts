@@ -1,4 +1,10 @@
-# Bluetooth CTS Add-on Repository
+# Bluetooth CTS Add-on
+
+![Bluetooth CTS icon](bluetooth-cts/icon.png)
+
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](bluetooth-cts/config.yaml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Open your Home Assistant instance and show the add-on repository.](https://my.home-assistant.io/badges/add_repository.svg)](https://my.home-assistant.io/redirect/supervisor_addon_repository/?repository_url=https://github.com/your-username/bluetooth-cts-repo)
 
 This repository contains the Bluetooth CTS (Current Time Service) add-on for Home Assistant.
 
@@ -11,3 +17,6 @@ This repository contains the Bluetooth CTS (Current Time Service) add-on for Hom
 
 ## Add-ons
 - Bluetooth CTS (Current Time Service)
+
+<!-- Optionally add screenshots below -->
+<!-- ![Screenshot](bluetooth-cts/screenshot.png) -->
