@@ -1,4 +1,7 @@
-#!/usr/bin/env bashio
+#!/bin/bash
+
+# Source bashio for Home Assistant add-ons
+source /usr/lib/bashio/bashio.sh
 
 # Read config directly from options.json with fallbacks
 CONFIG_FILE="/data/options.json"

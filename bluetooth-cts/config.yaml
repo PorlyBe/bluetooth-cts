@@ -1,23 +1,30 @@
-{
-  "name": "Bluetooth CTS Time Sync",
-  "slug": "bluetooth-cts",
-  "version": "1.0.0",
-  "description": "Advertises a Bluetooth Current Time Service (CTS) for BLE clocks and devices to sync time with Home Assistant. No pairing required. Timezone is configurable.",
-  "url": "https://github.com/PorlyBe/bluetooth-cts",
-  "arch": ["amd64", "aarch64", "armv7", "armhf", "i386"],
-  "startup": "application",
-  "boot": "auto",
-  "host_dbus": true,
-  "privileged": ["NET_ADMIN", "SYS_ADMIN"],
-  "devices": ["/dev/bus/usb", "/dev/serial"],
-  "options": {
-    "device_name": "HomeAssistant-CTS",
-    "log_level": "info",
-    "timezone": "UTC"
-  },
-  "schema": {
-    "device_name": "str",
-    "log_level": "list(debug|info|warning|error)",
-    "timezone": "str"
-  }
-}
+name: Bluetooth CTS Time Sync
+slug: bluetooth-cts
+version: 1.0.1
+description: >
+  Advertises a Bluetooth Current Time Service (CTS) for BLE clocks and devices to sync time with Home Assistant. No pairing required. Timezone is configurable.
+url: https://github.com/PorlyBe/bluetooth-cts
+arch:
+  - amd64
+  - aarch64
+  - armv7
+  - armhf
+  - i386
+startup: application
+boot: auto
+host_dbus: true
+init: false
+privileged:
+  - NET_ADMIN
+  - SYS_ADMIN
+devices:
+  - /dev/bus/usb
+  - /dev/serial
+options:
+  device_name: HomeAssistant-CTS
+  log_level: info
+  timezone: UTC
+schema:
+  device_name: str
+  log_level: "list(debug|info|warning|error)"
+  timezone: str
