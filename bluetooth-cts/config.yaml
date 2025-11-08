@@ -1,7 +1,7 @@
 {
   "name": "Bluetooth CTS Time Sync",
   "slug": "bluetooth-cts",
-  "version": "1.0.35",
+  "version": "1.0.0",
   "description": "Advertises a Bluetooth Current Time Service (CTS) for BLE clocks and devices to sync time with Home Assistant. No pairing required. Timezone is configurable.",
   "url": "https://github.com/your-repo/bluetooth-cts",
   "arch": ["amd64", "aarch64", "armv7", "armhf", "i386"],
