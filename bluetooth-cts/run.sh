@@ -1,7 +1,5 @@
-#!/bin/bash
-
-# Source bashio for Home Assistant add-ons
-source /usr/lib/bashio/bashio.sh
+#!/usr/bin/with-contenv bashio
+bashio::log.info "Starting Bluetooth CTS..."
 
 # Read config directly from options.json with fallbacks
 CONFIG_FILE="/data/options.json"
@@ -65,12 +63,5 @@ bashio::log.info "Configuring Bluetooth adapter..."
 # Give bluetoothctl time to complete
 sleep 2
 
-# Export timezone from add-on config if set
-TZ_VALUE=$(jq -r '.timezone // empty' /data/options.json)
-if [ -n "$TZ_VALUE" ]; then
-  export TZ="$TZ_VALUE"
-  bashio::log.info "Using timezone from config: $TZ_VALUE"
-fi
-
 bashio::log.info "Starting Current Time Service..."
-python3 /bluetooth_cts_server.py --device-name "${DEVICE_NAME}" --log-level "${LOG_LEVEL}"
+exec python3 /bluetooth_cts_server.py --device-name "${DEVICE_NAME}" --log-level "${LOG_LEVEL}"

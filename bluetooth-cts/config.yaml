@@ -14,17 +14,18 @@ startup: application
 boot: auto
 host_dbus: true
 init: false
+homeassistant_api: true
 privileged:
   - NET_ADMIN
   - SYS_ADMIN
 devices:
   - /dev/bus/usb
   - /dev/serial
+environment:
+  TZ: ""
 options:
   device_name: HomeAssistant-CTS
   log_level: info
-  timezone: UTC
 schema:
   device_name: str
   log_level: "list(debug|info|warning|error)"
-  timezone: str
